@@ -1,21 +1,54 @@
+
 <nav class="navbar navbar-inverse">
         <div class="container-fluid">
           <div class="navbar-header">
             <a class="navbar-brand" href="#">{{config('app.name', 'Alladin Insurance')}}</a>
           </div>
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
-              <span class="caret"></span></a>
+            <li class="active"><a href="/">Home</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Term Life Plan 
+                <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Page 1-1</a></li>
-                <li><a href="#">Page 1-2</a></li>
-                <li><a href="#">Page 1-3</a></li>
+                <li><a href="/term-life">Term Life</a></li>
+                <li><a href="/maisha-cover">Maisha Cover</a></li>
+                
               </ul>
             </li>
-            <li><a href="#">Page 2</a></li>
-            <li><a href="#">Page 3</a></li>
+
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Personal Assurance 
+                <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/masomo-cover">Masomo Cover</a></li>
+                <li><a href="/flexi-3-accumulation">Flexi-3 Accumulation</a></li>
+                
+              </ul>
+            </li>
+            
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Personal Savings 
+                <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/target-saving">Target Saving</a></li>
+                <li><a href="/vip-multiplier">VIP Multiplier</a></li>
+                
+              </ul>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Tuition Protection 
+                    <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/guaranteed-tuition">Guaranteed Tuition</a></li>                   
+                    
+                  </ul>
+                </li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Retirement Benefits 
+                        <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="/annuities">Annuities</a></li>
+                        <li><a href="/deposit-administration">Deposit Administration</a></li>
+                        
+                      </ul>
+                    </li>
+                    
           </ul>
         </div>
       </nav>
+      
