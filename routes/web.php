@@ -22,7 +22,7 @@ Route::get('/', function () {
 Route::get('/users/{id}/{name}', function ($id, $name){
     return 'This is user '.$name.' of id '.$id;
 });*/
-
+//page or view routes
 Route::get('/', 'PagesController@index');
 Route::get('/annuities', 'PagesController@annuities');
 Route::get('/deposit-administration', 'PagesController@depositAdministration');
@@ -33,4 +33,11 @@ Route::get('/target-saving', 'PagesController@targetSaving');
 Route::get('/term-life', 'PagesController@termLife');
 Route::get('/vip-multiplier', 'PagesController@vipMultiplier');
 Route::get('/flexi-3-accumulation', 'PagesController@flexi3Accumulation');
+
+//resource routes...read write from the database
+Route::resource('personal_assurance', 'Personal_assuranceController');
+Route::resource('personal_saving', 'Personal_savingController');
+Route::resource('retirement_benefit', 'Retirement_benefitController');
+Route::resource('term_life_plan', 'Term_life_planController');
+Route::resource('tuition_protection', 'Tuition_protectionController');
 

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class TermlifeController extends Controller
+class Term_life_planController extends Controller
 {
     /**
      * Display a listing of the resource.
