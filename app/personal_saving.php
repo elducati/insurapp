@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Flexi extends Model
+class personal_saving extends Model
 {
     //
 }

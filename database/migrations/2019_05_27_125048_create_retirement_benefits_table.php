@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAnnuitiesTable extends Migration
+class CreateRetirementBenefitsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,10 @@ class CreateAnnuitiesTable extends Migration
      */
     public function up()
     {
-        Schema::create('annuities', function (Blueprint $table) {
+        Schema::create('retirement_benefits', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->mediumText('description');
             $table->mediumText('features');
             $table->mediumText('benefits');
             $table->timestamps();
@@ -29,6 +30,6 @@ class CreateAnnuitiesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('annuities');
+        Schema::dropIfExists('retirement_benefits');
     }
 }

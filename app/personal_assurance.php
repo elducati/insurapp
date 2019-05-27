@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Vip extends Model
+class personal_assurance extends Model
 {
     //
 }

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateFlexisTable extends Migration
+class CreatePersonalAssurancesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,10 @@ class CreateFlexisTable extends Migration
      */
     public function up()
     {
-        Schema::create('flexis', function (Blueprint $table) {
+        Schema::create('personal_assurances', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->mediumText('description');
             $table->mediumText('features');
             $table->mediumText('benefits');
             $table->timestamps();
@@ -29,6 +30,6 @@ class CreateFlexisTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('flexis');
+        Schema::dropIfExists('personal_assurances');
     }
 }

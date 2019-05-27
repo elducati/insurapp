@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTermlivesTable extends Migration
+class CreateTermLifePlansTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,10 @@ class CreateTermlivesTable extends Migration
      */
     public function up()
     {
-        Schema::create('termlives', function (Blueprint $table) {
+        Schema::create('term_life_plans', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->mediumText('description');
             $table->mediumText('features');
             $table->mediumText('benefits');
             $table->timestamps();
@@ -29,6 +30,6 @@ class CreateTermlivesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('termlives');
+        Schema::dropIfExists('term_life_plans');
     }
 }

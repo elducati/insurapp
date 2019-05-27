@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Guaranteed extends Model
+class retirement_benefit extends Model
 {
     //
 }

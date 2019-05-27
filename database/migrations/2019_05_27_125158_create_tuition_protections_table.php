@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTargetsTable extends Migration
+class CreateTuitionProtectionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,10 @@ class CreateTargetsTable extends Migration
      */
     public function up()
     {
-        Schema::create('targets', function (Blueprint $table) {
+        Schema::create('tuition_protections', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->mediumText('description');
             $table->mediumText('features');
             $table->mediumText('benefits');
             $table->timestamps();
@@ -29,6 +30,6 @@ class CreateTargetsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('targets');
+        Schema::dropIfExists('tuition_protections');
     }
 }
