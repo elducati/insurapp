@@ -10,7 +10,7 @@
                 <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="/term-life">Term Life</a></li>
-                <li><a href="/maisha-cover">Maisha Cover</a></li>
+                <li><a href="/personal_assurance">Maisha Cover</a></li>
                 
               </ul>
             </li>

@@ -34,10 +34,12 @@ Route::get('/term-life', 'PagesController@termLife');
 Route::get('/vip-multiplier', 'PagesController@vipMultiplier');
 Route::get('/flexi-3-accumulation', 'PagesController@flexi3Accumulation');
 
-//resource routes...read write from the database
+//resource routes...read write from the database 'model , controller'
 Route::resource('personal_assurance', 'Personal_assuranceController');
 Route::resource('personal_saving', 'Personal_savingController');
 Route::resource('retirement_benefit', 'Retirement_benefitController');
 Route::resource('term_life_plan', 'Term_life_planController');
 Route::resource('tuition_protection', 'Tuition_protectionController');
+
+
 

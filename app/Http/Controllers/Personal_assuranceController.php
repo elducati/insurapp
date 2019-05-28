@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+//use model
+use App\personal_assurance;
 
 class Personal_assuranceController extends Controller
 {
@@ -13,7 +15,11 @@ class Personal_assuranceController extends Controller
      */
     public function index()
     {
-        //
+        //variable model personal_assurance
+        $personals = personal_assurance::all();
+        //return view/Personal_assurance/index
+        return view('Personal_assurance.index')->with('personals', $personals);
+        
     }
 
     /**
@@ -45,7 +51,10 @@ class Personal_assuranceController extends Controller
      */
     public function show($id)
     {
-        //
+        //model
+        $personal = personal_assurance::find($id);
+        //return view/Personal_assurance/index
+        return view('Personal_assurance.show')->with('personal', $personal);
     }
 
     /**
