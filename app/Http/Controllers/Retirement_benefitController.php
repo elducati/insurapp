@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\retirement_benefit;
 
 class Retirement_benefitController extends Controller
 {
@@ -13,7 +14,8 @@ class Retirement_benefitController extends Controller
      */
     public function index()
     {
-        //
+        $benefits = retirement_benefit::all();
+        return view('Retirement_benefit.index')->with('benefits', $benefits);
     }
 
     /**
@@ -45,7 +47,8 @@ class Retirement_benefitController extends Controller
      */
     public function show($id)
     {
-        //
+        $benefit = retirement_benefit::find($id);
+        return view('Retirement_benefit.show')->with('benefit',$benefit);
     }
 
     /**

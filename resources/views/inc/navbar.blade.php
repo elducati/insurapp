@@ -9,8 +9,8 @@
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Term Life Plan 
                 <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="/term-life">Term Life</a></li>
-                <li><a href="/maisha-cover">Maisha Cover</a></li>
+                <li><a href="/term-life_plan/1">Term Life</a></li>
+                <li><a href="/term-life_plan/2">Maisha Cover</a></li>
                 
               </ul>
             </li>
@@ -42,8 +42,8 @@
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Retirement Benefits 
                         <span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                        <li><a href="/annuities">Annuities</a></li>
-                        <li><a href="/deposit-administration">Deposit Administration</a></li>
+                      <li><a href="/retirement_benefit/1">Annuities</a></li>
+                        <li><a href="/retirement_benefit/2">Deposit Administration</a></li>
                         
                       </ul>
                     </li>

@@ -2,18 +2,18 @@
 
 
 @section('content')
-<a href="/personal_saving" class="btn btn-default">Go Back</a>
-    <h1 class="well">{{$saving->name}}</h1>
+<a href="/term_life_plan" class="btn btn-default">Go Back</a>
+    <h1 class="well">{{$term->name}}</h1>
     <div>
         <h2>Description</h2>
-        {{$saving->description}}
+        {{$term->description}}
     </div>
     <div>
         <h2>Features</h2>
-        {{$saving->features}}
+        {{$term->features}}
     </div>
     <div>
         <h2>Benefits</h2>
-        {{$saving->benefits}}
+        {{$term->benefits}}
     </div>
 @endsection

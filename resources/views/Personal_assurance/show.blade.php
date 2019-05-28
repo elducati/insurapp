@@ -3,7 +3,7 @@
 
 @section('content')
 <a href="/personal_assurance" class="btn btn-default">Go Back</a>
-    <h1>{{$personal->name}}</h1>
+    <h1 class="well">{{$personal->name}}</h1>
     <div>
         <h2>Description</h2>
         {{$personal->description}}

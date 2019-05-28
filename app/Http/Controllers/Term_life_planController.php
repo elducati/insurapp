@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\term_life_plan;
 
 class Term_life_planController extends Controller
 {
@@ -13,7 +14,8 @@ class Term_life_planController extends Controller
      */
     public function index()
     {
-        //
+        $terms = term_life_plan::all();
+        return view('Term_life_plan.index')->with('terms', $terms);
     }
 
     /**
@@ -45,7 +47,8 @@ class Term_life_planController extends Controller
      */
     public function show($id)
     {
-        //
+        $term = term_life_plan::find($id);
+        return view('Term_life_plan.show')->with('term',$term);
     }
 
     /**
