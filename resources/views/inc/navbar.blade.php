@@ -10,7 +10,7 @@
                 <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="/term-life">Term Life</a></li>
-                <li><a href="/personal_assurance">Maisha Cover</a></li>
+                <li><a href="/maisha-cover">Maisha Cover</a></li>
                 
               </ul>
             </li>
@@ -18,8 +18,8 @@
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Personal Assurance 
                 <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="/masomo-cover">Masomo Cover</a></li>
-                <li><a href="/flexi-3-accumulation">Flexi-3 Accumulation</a></li>
+              <li><a href="/personal_assurance/1">Masomo Cover</a></li>
+                <li><a href="/personal_assurance/2">Flexi-3 Accumulation</a></li>
                 
               </ul>
             </li>
@@ -27,8 +27,8 @@
             <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Personal Savings 
                 <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="/target-saving">Target Saving</a></li>
-                <li><a href="/vip-multiplier">VIP Multiplier</a></li>
+                <li><a href="/personal_saving/1">Target Saving</a></li>
+                <li><a href="/personal_saving/2">VIP Multiplier</a></li>
                 
               </ul>
             </li>

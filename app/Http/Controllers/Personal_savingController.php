@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\personal_saving;
 
 class Personal_savingController extends Controller
 {
@@ -13,7 +14,8 @@ class Personal_savingController extends Controller
      */
     public function index()
     {
-        //
+        $savings = personal_saving::all();
+        return view('Personal_saving.index')->with('savings', $savings);
     }
 
     /**
@@ -45,7 +47,8 @@ class Personal_savingController extends Controller
      */
     public function show($id)
     {
-        //
+        $saving = personal_saving::find($id);
+        return view('Personal_saving.show')->with('saving', $saving);
     }
 
     /**
